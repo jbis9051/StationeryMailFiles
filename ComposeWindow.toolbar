@@ -1,0 +1,161 @@
+{
+    "default set" = (
+        "send:",
+        "header_fields",
+        NSToolbarFlexibleSpaceItem,
+        "changeReplyMode:",
+        "insertFile:",
+        "insertOriginalAttachments:",
+        "toggleComposeFormatInspectorBar:",
+		"showMediaBrowser:",
+		"showOrHideStationery:"
+    );
+    "toolbar array" = (
+        (
+            {
+                help = "ToolTipSend";
+                identifier = "send:";
+                image = TB_SendTemplate;
+                tag = 80;
+                title = "ToolbarSend";
+            },
+            {
+                help = "ReplyToolTip";
+                identifier = "changeReplyMode:";
+                image = TB_ReplyTemplate;
+                tag = 71;
+                title = "ToolbarReply";
+                altTitle = "ToolbarReplyAll";
+            },
+            {
+                help = "ToolTipStationery";
+                identifier = "showOrHideStationery:";
+                image = TB_StationeryTemplate;
+                tag = 999;
+                title = "ToolbarShowStationery";
+            },
+            {
+                help = "ToolTipMediaBrowser";
+                identifier = "showMediaBrowser:";
+                image = TB_MediaBrowserTemplate;
+                tag = 998;
+                title = "ToolbarMediaBrowser";
+            },
+            {
+                help = "ToolTipAttach";
+                identifier = "insertFile:";
+                image = TB_AttachTemplate;
+                tag = 84;
+                title = "ToolbarAttach";
+            },
+            {
+                help = "ToolTipPrintCompose";
+                identifier = "showPrintPanel:";
+                image = NSPrint;
+                tag = 85;
+                title = "ToolbarPrint";
+            },
+            {
+                help = "ToolTipAppend";
+                identifier = "appendMessages:";
+                image = TB_AppendTemplate;
+                tag = 83;
+                title = "ToolbarAppend";
+            },
+            {
+                help = "ToolTipComposeFormatBar";
+                identifier = "toggleComposeFormatInspectorBar:";
+                image = TB_FontsTemplate;
+                tag = "-1";
+                title = "ToolbarComposeFormatBar";
+            },
+            {
+                identifier = "font_smaller_bigger";
+                tag = 302;
+                segments = (
+                    {
+                        help = "ToolTipSmaller";
+                        identifier = "makeFontSmaller:";
+                        image = TB_FontSmallerTemplate;
+                        tag = "-1";
+                        title = "ToolbarSmaller";
+                    },
+                    {
+                        help = "ToolTipBigger";
+                        identifier = "makeFontBigger:";
+                        image = TB_FontBiggerTemplate;
+                        tag = "-1";
+                        title = "ToolbarBigger";
+                    }
+                );
+            },
+            {
+                identifier = "text_rich_plain";
+                tag = 304;
+                segments = (
+                    {
+                        help = "ToolTipRich";
+                        identifier = "makeRichText:";
+                        image = TB_MakeRichTemplate;
+                        tag = "-1";
+                        title = "ToolbarMakeRich";
+                    },
+                    {
+                        help = "ToolTipPlain";
+                        identifier = "makePlainText:";
+                        image = TB_MakePlainTemplate;
+                        tag = "-1";
+                        title = "ToolbarMakePlain";
+                    }
+                );
+            },
+            {
+                help = "ToolTipIncludeOriginalAttachments";
+                identifier = "insertOriginalAttachments:";
+                image = TB_IncludeAttachmentsTemplate;
+                tag = 87;
+                title = "ToolbarIncludeOriginalAttachments";
+            },
+            {
+                identifier = "lists";
+                tag = 305;
+                title = "ToolbarListsObject";
+                segments = (
+                    {
+		                help = "ToolTipListsObject";
+                        identifier = "insertBulletedList:";
+                        image = TB_ListsTemplate;
+                        tag = "-1";
+                        target = "WebViewEditor";
+                    },
+                    {
+		                help = "ToolTipListsPopUp";
+                        identifier = "insertList:";
+                        tag = 141;
+                        target = "WebViewEditor";
+                    },
+                );
+            },
+            {
+                help = "ToolTipEditLink";
+                identifier = "editLink:";
+                image = TB_EditLinkTemplate;
+                tag = "-1";
+                target = "WebViewEditor";
+                title = "ToolbarEditLink";
+            },
+            {
+                identifier = "header_fields";
+                segments = (
+                    {
+                        help = "ToolTipHeadersObject";
+                        identifier = "editVisibleHeaders:";
+                        image = TB_VisibleHeadersTemplate;
+                        tag = 161;
+                        title = "ToolbarHeadersObject";
+                    }
+                );
+            },
+        )
+    );
+}
